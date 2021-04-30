@@ -33,21 +33,21 @@ dist.jar=${dist.dir}/engr-parameter-agent.jar
 dist.javadoc.dir=${dist.dir}/javadoc
 endorsed.classpath=
 excludes=
-file.reference.bcprov-jdk16-145.jar=../lib/bcprov-jdk16-145.jar
-file.reference.commons-codec-1.11.jar=../lib/commons-codec-1.11.jar
-file.reference.commons-compress-1.9.jar=../lib/commons-compress-1.9.jar
-file.reference.commons-dbcp-1.2.2.jar=../lib/commons-dbcp-1.2.2.jar
-file.reference.commons-digester-2.1.jar=../lib/commons-digester-2.1.jar
-file.reference.commons-pool-1.5.4.jar=../lib/commons-pool-1.5.4.jar
-file.reference.fontawesomefx-8.9.jar=../lib/fontawesomefx-8.9.jar
-file.reference.ini4j-0.5.1.jar=../lib/ini4j-0.5.1.jar
-file.reference.json-simple-1.1.1.jar=../lib/json-simple-1.1.1.jar
-file.reference.mysql-connector-java-5.1.49.jar=../lib/mysql-connector-java-5.1.49.jar
+file.reference.bcprov-jdk16-145.jar=D:\\GGC_Java_Systems/lib/bcprov-jdk16-145.jar
+file.reference.commons-codec-1.11.jar=D:\\GGC_Java_Systems/lib/commons-codec-1.11.jar
+file.reference.commons-compress-1.9.jar=D:\\GGC_Java_Systems/lib/commons-compress-1.9.jar
+file.reference.commons-dbcp-1.2.2.jar=D:\\GGC_Java_Systems/lib/commons-dbcp-1.2.2.jar
+file.reference.commons-digester-2.1.jar=D:\\GGC_Java_Systems/lib/commons-digester-2.1.jar
+file.reference.commons-pool-1.5.4.jar=D:\\GGC_Java_Systems/lib/commons-pool-1.5.4.jar
+file.reference.fontawesomefx-8.9.jar=D:\\GGC_Java_Systems/lib/fontawesomefx-8.9.jar
+file.reference.ini4j-0.5.1.jar=D:\\GGC_Java_Systems/lib/ini4j-0.5.1.jar
+file.reference.json-simple-1.1.1.jar=D:\\GGC_Java_Systems/lib/json-simple-1.1.1.jar
+file.reference.mysql-connector-java-5.1.49.jar=D:\\GGC_Java_Systems/lib/mysql-connector-java-5.1.49.jar
 includes=**
 jar.compress=false
 javac.classpath=\
-    ${libs.jpa20-persistence.classpath}:\
     ${file.reference.mysql-connector-java-5.1.49.jar}:\
+    ${libs.jpa20-persistence.classpath}:\
     ${reference.appdriver-agent.jar}:\
     ${reference.appdriver-agentfx.jar}:\
     ${reference.appdriver-agentfx-ui.jar}:\
@@ -55,8 +55,6 @@ javac.classpath=\
     ${reference.appdriver-constant.jar}:\
     ${reference.appdriver-iface.jar}:\
     ${reference.engr-client.jar}:\
-    ${reference.engr-parameter-pojo.jar}:\
-    ${reference.engr-parameter-base.jar}:\
     ${file.reference.bcprov-jdk16-145.jar}:\
     ${file.reference.commons-codec-1.11.jar}:\
     ${file.reference.commons-compress-1.9.jar}:\
@@ -65,7 +63,9 @@ javac.classpath=\
     ${file.reference.commons-pool-1.5.4.jar}:\
     ${file.reference.ini4j-0.5.1.jar}:\
     ${file.reference.json-simple-1.1.1.jar}:\
-    ${file.reference.fontawesomefx-8.9.jar}
+    ${file.reference.fontawesomefx-8.9.jar}:\
+    ${reference.engr-parameter-pojo.jar}:\
+    ${reference.engr-parameter-base.jar}
 # Space-separated list of extra javac options
 javac.compilerargs=
 javac.deprecation=false
