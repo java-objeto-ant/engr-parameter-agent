@@ -203,12 +203,12 @@ public class XMCompany implements XMRecord{
     
     public JSONObject searchCompany(String fsValue, boolean fbByCode){
         String lsHeader = "ID»Name»Code";
-        String lsColName = "sCompnyCd»sCompnyNm";
-        String lsColCrit = "sCompnyCd»sCompnyNm";
+        String lsColName = "sCompnyID»sCompnyNm»sCompnyCd";
+        String lsColCrit = "sCompnyID»sCompnyNm»sCompnyCd";
         String lsSQL = "SELECT " +
-                            "  sCompnyCd" + 
+                            "  sCompnyID" + 
                             ", sCompnyNm" + 
-                            ", sCompnyID" +
+                            ", sCompnyCd" +
                             ", sEmplyrNo" + 
                             ", cRecdStat" + 
                         " FROM Company";       
